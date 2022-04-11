@@ -1,5 +1,9 @@
 ### [Migration Costs and Observational Returns to Migration in the Developing World, Journal of Monetary Economics](https://www.sciencedirect.com/science/article/abs/pii/S0304393220300428), Volume 113, August 2020
 
+<p align="center">
+<img src="observational-returns.png">
+</p>
+
 ---
 
 This repository contains replication data and code for the paper ["Migration costs and observational returns to migration in the developing world"](https://www.sciencedirect.com/science/article/abs/pii/S0304393220300428), published in 2020 in Volume 113 of the Journal of Monetary Economics.
