@@ -1,4 +1,4 @@
-### Migration Costs and Observational Returns to Migration in the Developing World, Journal of Monetary Economics, Volume 113, August 2020
+### [Migration Costs and Observational Returns to Migration in the Developing World, Journal of Monetary Economics](https://www.sciencedirect.com/science/article/abs/pii/S0304393220300428), Volume 113, August 2020
 
 ---
 
@@ -16,17 +16,27 @@ Dependencies: The code relies on the following packages in Stata:
 
 The directory is organized as follows:
 
-* [Code](/Code): contains all code for replicating the project
-	* Replication_SetUp.do: Defines all filepath globals. Run this first.
-	* Build: Contains scripts for cleaning data for analysis
-	* Analysis: Contains scripts for analysing clean data and constructing tables
-* Data: Contains raw and cleaned data for the project
-	* Raw: Original secondary datasets
-	* Build: Data constructed from scripts in Code/Build
-* Output: Contains LaTeX tables
-	* AllTables: Compiles all tables into a single document.
+* [Code](/Code): contains all code for replicating the project:
+
+	* [Replication_SetUp.do](/Code/Replication_SetUp.do): Defines all file path globals. Run this first.
+
+	* [Build](/Code/Build): Contains scripts for cleaning data for analysis
+
+	* [Analysis](/Code/Analysis): Contains scripts for analyzing clean data and constructing tables
+
+* [Data][/Data]: Contains raw and cleaned data for the project
+
+	* [Build][/Data/Build]: Cleaned data constructed from scripts in Code/Build
+
+	* The original raw datasets are too large to post on github. As of now please contact [David Lagakos](lagakos@gmail.com) to access them.
+
+* [Output][/Output]: Contains LaTeX tables
+
+	* [AllTables][/Output/AllTables]: Compiles all tables into a single document.
 
 To produce the tables from the paper:
-1. Open and run Code/Replication_SetUp.do
-2. Open and run runStudy.do (in the main directory)
-3. Open and recompile Output/AllTables.tex
+1. Open and run [Code/Replication_SetUp.do](/Code/Replication_SetUp.do)
+
+2. Open and run [runStudy.do](runStudy.do)
+
+3. Open and recompile [Output/AllTables.tex](/Output/AllTables.tex)
