@@ -24,15 +24,15 @@ The directory is organized as follows:
 
 	* [Analysis](/Code/Analysis): Contains scripts for analyzing clean data and constructing tables
 
-* [Data][/Data]: Contains raw and cleaned data for the project
+* [Data](/Data): Contains raw and cleaned data for the project
 
-	* [Build][/Data/Build]: Cleaned data constructed from scripts in Code/Build
+	* [Build](/Data/Build): Cleaned data constructed from scripts in Code/Build
 
 	* The original raw datasets are too large to post on github. As of now please contact [David Lagakos](lagakos@gmail.com) to access them.
 
-* [Output][/Output]: Contains LaTeX tables
+* [Output](/Output): Contains LaTeX tables
 
-	* [AllTables][/Output/AllTables]: Compiles all tables into a single document.
+	* [AllTables](/Output/AllTables): Compiles all tables into a single document.
 
 To produce the tables from the paper:
 1. Open and run [Code/Replication_SetUp.do](/Code/Replication_SetUp.do)
