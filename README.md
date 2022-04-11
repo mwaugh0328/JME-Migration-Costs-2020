@@ -32,11 +32,11 @@ The directory is organized as follows:
 
 * [Output](/Output): Contains LaTeX tables
 
-	* [AllTables](/Output/AllTables): Compiles all tables into a single document.
+	* [AllTables](/Output/AllTables.tex): Compiles all tables into a single document.
 
 To produce the tables from the paper:
 1. Open and run [Code/Replication_SetUp.do](/Code/Replication_SetUp.do)
 
-2. Open and run [runStudy.do](runStudy.do)
+2. Open and run [RunStudy.do](RunStudy.do)
 
 3. Open and recompile [Output/AllTables.tex](/Output/AllTables.tex)
