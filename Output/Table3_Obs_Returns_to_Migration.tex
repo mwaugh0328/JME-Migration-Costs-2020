@@ -1,0 +1,43 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Observational Returns to Migration in Six Developing Countries.}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{1}{c}{} \\
+\midrule
+China               &       0.545\sym{***}&       0.161\sym{***}&       0.012         &       0.226\sym{***}\\
+                    &     (0.005)         &     (0.028)         &     (0.064)         &     (0.031)         \\
+\addlinespace
+Ghana               &       0.410\sym{***}&       0.148         &      -0.173         &       0.339\sym{**} \\
+                    &     (0.013)         &     (0.122)         &     (0.220)         &     (0.148)         \\
+\addlinespace
+Indonesia           &       0.625\sym{***}&       0.145\sym{***}&       0.039         &       0.167\sym{***}\\
+                    &     (0.009)         &     (0.019)         &     (0.031)         &     (0.029)         \\
+\addlinespace
+Malawi              &       0.520\sym{***}&       0.048         &      -0.350\sym{***}&       0.189         \\
+                    &     (0.012)         &     (0.089)         &     (0.123)         &     (0.134)         \\
+\addlinespace
+South Africa        &       0.737\sym{***}&       0.212\sym{***}&       0.028         &       0.291\sym{***}\\
+                    &     (0.006)         &     (0.022)         &     (0.044)         &     (0.026)         \\
+\addlinespace
+Tanzania            &       0.666\sym{***}&       0.112\sym{***}&       0.101\sym{**} &       0.213\sym{***}\\
+                    &     (0.032)         &     (0.030)         &     (0.045)         &     (0.043)         \\
+\midrule
+Individual\_FE       &          No         &         Yes         &         Yes         &         Yes         \\
+Year\_FE             &          No         &         Yes         &         Yes         &         Yes         \\
+Sample              &        Full         &        Full         & Start Urban         & Start Rural         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Note: This table presents the estimated coefficients of urban dummy}\\
+\multicolumn{5}{l}{\footnotesize variables from regressions of log consumption per adult on urban dummies}\\
+\multicolumn{5}{l}{\footnotesize and other covariates in the six countries. Column (1) presents}\\
+\multicolumn{5}{l}{\footnotesize the cross-sectional estimates, with no other controls. Column (2) adds}\\
+\multicolumn{5}{l}{\footnotesize year and individual fixed effects, plus quadratic controls for age and}\\
+\multicolumn{5}{l}{\footnotesize household size. Column (3) has year and individual fixed effects, plus}\\
+\multicolumn{5}{l}{\footnotesize quadratic controls for age and household size, and restricts the sample to}\\
+\multicolumn{5}{l}{\footnotesize only those starting in an urban location. Column (4) is the same model}\\
+\multicolumn{5}{l}{\footnotesize as in column (3), but restricts the sample to only those starting from a}\\
+\multicolumn{5}{l}{\footnotesize rural location. Robust standard errors, clustered at the level of the wave}\\
+\multicolumn{5}{l}{\footnotesize 1 household, are in parenthesis. $\sym{*} p<.1, \sym{**}p<.05, \sym{***}p<.01$}\\
+\end{tabular}
+\end{table}

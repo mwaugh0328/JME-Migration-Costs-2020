@@ -1,0 +1,148 @@
+\documentclass[11pt]{article}% Your documentclass
+\usepackage{verbatim}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{dcolumn}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+% Necessary packages
+\usepackage[T1]{fontenc}% Must be loaded for proper fontencoding when using pdfLaTeX
+\usepackage[utf8]{inputenx}% For proper input encoding
+
+% Packages for tables
+\usepackage{booktabs}% Pretty tables
+\usepackage{threeparttable}% For Notes below table
+\usepackage[skip=5pt, justification=centering]{caption}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{amsmath}
+\usepackage{morefloats}
+%INCLUDE HYPERREF AT END
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  linkcolor    = blue, %Colour of internal links
+}
+%%NEED THIS TO WORK WITH TABLES%%
+      \makeatletter
+       \edef\originalbmathcode{%
+           \noexpand\mathchardef\noexpand\@tempa\the\mathcode`\(\relax}
+       \def\resetMathstrut@{%
+         \setbox\z@\hbox{%
+           \originalbmathcode
+          \def\@tempb##1"##2##3{\the\textfont"##3\char"}%
+ \expandafter\@tempb\meaning\@tempa \relax
+ }%
+ \ht\Mathstrutbox@\ht\z@ \dp\Mathstrutbox@\dp\z@
+ }
+ \makeatother
+
+%TEXTFONT
+ \usepackage{mweights}
+ %DEFAULT
+%MATHFONT
+ %DEFAULT
+% *****************************************************************
+% siunitx
+% *****************************************************************
+\newcommand{\sym}[1]{\rlap{#1}} % Thanks to Joseph Wright & David Carlisle
+
+\usepackage{siunitx}
+ \sisetup{
+ detect-mode,
+ group-digits = false,
+ input-symbols = ( ) [ ] - +,
+ table-align-text-post = false,
+ input-signs = ,
+ } 
+
+% Character substitution that prints brackets and the minus symbol in text mode. Thanks to David Carlisle
+\def\yyy{%
+ \bgroup\uccode`\~\expandafter`\string-%
+ \uppercase{\egroup\edef~{\noexpand\text{\llap{\textendash}\relax}}}%
+ \mathcode\expandafter`\string-"8000 }
+
+\def\xxxl#1{%
+\bgroup\uccode`\~\expandafter`\string#1%
+\uppercase{\egroup\edef~{\noexpand\text{\noexpand\llap{\string#1}}}}%
+\mathcode\expandafter`\string#1"8000 }
+
+\def\xxxr#1{%
+\bgroup\uccode`\~\expandafter`\string#1%
+\uppercase{\egroup\edef~{\noexpand\text{\noexpand\rlap{\string#1}}}}%
+\mathcode\expandafter`\string#1"8000 }
+
+\def\textsymbols{\xxxl[\xxxr]\xxxl(\xxxr)\yyy}
+% *****************************************************************
+% Estout related things
+% *****************************************************************
+\let\estinput=\input % define a new input command so that we can still flatten the document
+
+\newcommand{\estwide}[3]{
+               \vspace{.75ex}{
+                       \textsymbols
+                       \begin{tabular*}
+                       {\textwidth}{@{\hskip\tabcolsep\extracolsep\fill}l*{#2}{#3}}
+                       \toprule
+                       \estinput{#1}
+                       \bottomrule
+                       \addlinespace[0.75ex]
+                       \end{tabular*}
+                       }
+               }       
+
+\newcommand{\estwideland}[3]{
+               \vspace{.75ex}{
+                       \textsymbols
+                       \begin{tabular*}
+                       {\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}l*{#2}{#3}}
+                       \toprule
+                       \estinput{#1}
+                       \bottomrule
+                       \addlinespace[0.75ex]
+                       \end{tabular*}
+                       }
+               }       
+
+\newcommand{\estauto}[3]{
+               \vspace{.75ex}{
+                       \textsymbols
+                       \begin{tabular}{l*{#2}{#3}}
+                       \toprule
+                       \estinput{#1}
+                       \bottomrule
+                       \addlinespace[.75ex]
+                       \end{tabular}
+                       }
+               }
+
+% Allow line breaks with \\ in specialcells
+\newcommand{\specialcell}[2][c]{%
+    \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}
+}
+
+% *****************************************************************
+% Custom subcaptions
+% *****************************************************************
+% Note/Source/Text after Tables
+% The new approach using threeparttables to generate notes that are the exact width of the table.
+\newcommand{\Figtext}[1]{%
+       \begin{tablenotes}[para,flushleft]
+       {
+       #1
+       }
+       \end{tablenotes}
+       
+       }
+% *****************************************************************
+% END PREAMBLE
+% *****************************************************************
+
+\begin{document}
+\input{Table2_descriptive.tex}
+\input{Table3_Obs_Returns_to_Migration.tex}
+\input{Table4_Returns_inc.tex}
+\input{Table5_Indonesia_robustness.tex}
+\input{Table6_Returns_by_Region.tex}
+\input{Table7_Obs_v_Exp.tex}
+\end{document}

@@ -2,14 +2,7 @@ This repository contains replication data and code for the paper "Migration cost
 
 Link to published version:https://www.sciencedirect.com/science/article/abs/pii/S0304393220300428
 
-Dependencies: The code relies on the following packages in Stata:
-
-* estout
-* outreg2
-* geodist
-
 The directory is organized as follows:
-
 * Code: contains all code for replicating the project
 	* Replication_SetUp.do: Defines all filepath globals. Run this first.
 	* Build: Contains scripts for cleaning data for analysis

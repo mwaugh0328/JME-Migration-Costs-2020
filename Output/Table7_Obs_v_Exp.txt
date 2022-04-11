@@ -1,0 +1,14 @@
+		(1)	(2)	(3)
+VARIABLES	LABELS	Observational	Experimental	Difference
+				
+migrated	Seasonally Migrated	0.092*	0.357**	
+		(0.053)	(0.156)	
+_bs_1	Difference in Returns			0.265***
+				(0.095)
+Constant	Constant	6.739***	6.652***	
+		(0.022)	(0.084)	
+				
+Observations		1,194	1,867	1,867
+R-squared		0.699		
+Individual FE		Yes	Yes	
+Year FE		Yes	Yes	

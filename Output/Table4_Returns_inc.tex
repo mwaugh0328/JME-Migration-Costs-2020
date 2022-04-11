@@ -1,0 +1,32 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Observational Returns to Migration: Income Measures.}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{1}{c}{} \\
+\midrule
+Indonesia           &       0.623\sym{***}&       0.169\sym{***}&       0.014         &       0.100\sym{**} \\
+                    &     (0.011)         &     (0.028)         &     (0.042)         &     (0.042)         \\
+\addlinespace
+South Africa        &       0.649\sym{***}&       0.249\sym{***}&       0.035         &       0.289\sym{***}\\
+                    &     (0.006)         &     (0.023)         &     (0.045)         &     (0.029)         \\
+\midrule
+hours\_control       &                     &                     &                     &                     \\
+Individual\_FE       &          No         &         Yes         &         Yes         &         Yes         \\
+Year\_FE             &          No         &         Yes         &         Yes         &         Yes         \\
+Sample              &        Full         &        Full         & Start Urban         & Start Rural         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Note: This table presents the estimated coefficients of urban dummy}\\
+\multicolumn{5}{l}{\footnotesize variables from regressions of log household income per adult on urban}\\
+\multicolumn{5}{l}{\footnotesize dummies and other covariates in the six countries. Column (1) presents}\\
+\multicolumn{5}{l}{\footnotesize the cross-sectional estimates, with no other controls. Column (2) adds}\\
+\multicolumn{5}{l}{\footnotesize year and individual fixed effects, plus quadratic controls for age and}\\
+\multicolumn{5}{l}{\footnotesize household size. Column (3) has year and individual fixed effects, plus}\\
+\multicolumn{5}{l}{\footnotesize quadratic controls for age and household size, and restricts the sample to}\\
+\multicolumn{5}{l}{\footnotesize only those starting in an urban location. Column (4) is the same model}\\
+\multicolumn{5}{l}{\footnotesize as in column (3), but restricts the sample to only those starting from a}\\
+\multicolumn{5}{l}{\footnotesize rural location. Robust standard errors, clustered at the level of the wave}\\
+\multicolumn{5}{l}{\footnotesize 1 household, are in parenthesis. $\sym{*} p<.1, \sym{**}p<.05, \sym{***}p<.01$}\\
+\end{tabular}
+\end{table}

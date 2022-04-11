@@ -1,0 +1,36 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Results for Indonesia Under Alternative Specifications.}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{Cross-Section}&\multicolumn{1}{c}{Panel}&\multicolumn{1}{c}{Rural-Only}&\multicolumn{1}{c}{Work Moves}\\
+\midrule
+City, Ind. Earnings &       0.638\sym{***}&       0.101\sym{***}&       0.081         &       0.016         \\
+                    &     (0.019)         &     (0.038)         &     (0.066)         &     (0.134)         \\
+\addlinespace
+City, HH. Earnings  &       0.623\sym{***}&       0.169\sym{***}&       0.100\sym{**} &       0.229\sym{***}\\
+                    &     (0.011)         &     (0.028)         &     (0.042)         &     (0.086)         \\
+\addlinespace
+City, HH.           &       0.625\sym{***}&       0.145\sym{***}&       0.167\sym{***}&       0.263\sym{***}\\
+Consumption         &     (0.009)         &     (0.019)         &     (0.029)         &     (0.056)         \\
+\addlinespace
+City + small towns, &       0.739\sym{***}&       0.065\sym{**} &       0.044         &       0.071         \\
+Ind. Earnings       &     (0.014)         &     (0.030)         &     (0.034)         &     (0.073)         \\
+\addlinespace
+City + small towns, &       0.590\sym{***}&       0.116\sym{***}&       0.100\sym{***}&       0.178\sym{***}\\
+HH. Earnings        &     (0.008)         &     (0.021)         &     (0.023)         &     (0.055)         \\
+\addlinespace
+City + small towns, &       0.597\sym{***}&       0.125\sym{***}&       0.111\sym{***}&       0.156\sym{***}\\
+HH. Consumption     &     (0.006)         &     (0.014)         &     (0.015)         &     (0.036)         \\
+\midrule
+Individual\_FE       &          No         &         Yes         &         Yes         &         Yes         \\
+Year\_FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+Initial\_Location    &         All         &         All         &       Rural         &       Rural         \\
+Move\_Reason         &         Any         &         Any         &         Any         &        Work         \\
+Local\_Mig\_Rate      &         All         &         All         &         All         &         All         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<.1\), \sym{**} \(p<.05\), \sym{***} \(p<.01\)}\\
+\end{tabular}
+\end{table}
